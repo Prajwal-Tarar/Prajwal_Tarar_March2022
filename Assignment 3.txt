@@ -1,0 +1,207 @@
+
+import java.util.Scanner;
+class Digi_sum_10{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number ");
+		int n =sc.nextInt();
+		int rem,a=0;
+		while(n>0){
+			rem=n%10;
+			a=a+rem;
+			n=n/10;
+		}
+		System.out.println("Sum is= "+a);
+	}
+}
+		
+			
+		
+		
+import java.util.Scanner;
+class Digit_8{
+	public static void main(String args[]){
+		int num;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter number");
+		num=sc.nextInt();
+		int rem;
+		while(num>0){
+		rem=num%10;
+		System.out.print(rem+"\t");
+		num=num/10;
+	}
+	
+	}
+}
+
+
+import java.util.Scanner;
+class Ev_odd_1{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+			System.out.println("Enter a number");
+			int a = sc.nextInt();
+			if(a%2==0)
+				System.out.println("Number is even");
+			else 
+				System.out.println("Number is odd");
+	}
+}
+
+
+
+class Even_19{
+	public static void main (String args[]){
+		
+		for(int n=2;n>0;n+=2)
+			System.out.println(n);
+	}
+}
+
+
+
+
+import java.util.Scanner;
+class Factorial_2{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		int fact=1;
+		System.out.println("Enter a number ");
+		int a = sc.nextInt();
+		for(int i=1;i<=a;i++)
+			fact=fact*i;
+		System.out.println("Factorial of number is = "+fact);
+	}
+}
+
+
+
+import java.util.Scanner;
+class Leap_6{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a year");
+		int year = sc.nextInt();
+		if((year%4==0 || year%400==0) && year%100 !=0)
+			System.out.println("Year is leap !!");
+		else
+			System.out.println("Year is not leap !!");
+	}
+}
+
+
+
+
+
+class Odd_20{
+	public static void main (String args[]){
+		for(int n=1;n>0;n+=2)
+			System.out.println(n);
+	}
+}
+
+
+
+import java.util.Scanner;
+class Palindrome_17{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number ");
+		int n =sc.nextInt();
+		int rem;
+		String a="";
+		while(n>0){
+			rem=n%10;
+			System.out.print("Revers number is"+rem);
+			n=n/10;
+		}
+		System.out.println("\n"+rem);
+		
+	}
+}
+		
+			
+		
+		
+import java.util.Scanner;
+class Positive_5{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number ");
+		int num = sc.nextInt();
+		if(num>0)
+			System.out.println("Number is positive");
+		else
+			System.out.println("Number is negetive");
+	}
+}
+
+
+
+
+
+
+
+
+import java.util.Scanner;
+class Reverse_13{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number ");
+		int n =sc.nextInt();
+		int rem;
+		String a="";
+		while(n>0){
+			rem=n%10;
+			System.out.print("Revers number is"+rem);
+			n=n/10;
+		}
+		
+	}
+}
+		
+			
+		
+		
+
+import java.util.Scanner;
+class Small_11{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter 3 number");
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
+		if(a<b && a<c)
+			System.out.println("Small number is "+a);
+		else if(b<a && b<c)
+			System.out.println("Small number is "+b);
+		else if(c<b && c<a)
+			System.out.println("Small number is "+c);
+	}
+}
+
+
+
+
+
+import java.util.Scanner;
+class Swap_4{
+	public static void main(String args[]){
+		int a,b;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter first number");
+		a=sc.nextInt();
+		System.out.println("Enter second number");
+		b=sc.nextInt();
+		a=a+b;
+		b=a-b;
+		a=a-b;
+		System.out.println("a= "+a+"\t"+"b= "+b);
+	}
+}	
+		
+		
+
+

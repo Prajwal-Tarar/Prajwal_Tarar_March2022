@@ -1,0 +1,358 @@
+import java.util.Scanner;
+class Average_12{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		float a,b,c,avg;
+		System.out.println("Enter first number");
+		a=sc.nextFloat();
+		System.out.println("Enter second number");
+		b=sc.nextFloat();
+		System.out.println("Enter thired number");
+		c=sc.nextFloat();
+		avg=(a+b+c)/3;
+		System.out.println("Average = "+avg);
+	}
+}
+
+
+import java.util.Scanner;
+class Calculation_6{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		int a,b;
+		int add,sub,mul,div,mod;
+		System.out.println("Enter first number");
+		a= sc.nextInt();
+		System.out.println("Enter second number");
+		b= sc.nextInt();
+		add= a+b;
+		sub=a-b;
+		mul=a*b;
+		div=a/b;
+		mod=a%b;
+		System.out.println("Addition is = "+add);
+		System.out.println("Subtraction is = "+sub);
+		System.out.println("Multiplication is = "+mul);
+		System.out.println("Divition is = "+div);
+		System.out.println("Remainder is = "+mod);
+	}
+}
+
+
+class Circle_11{
+	public static void main(String args[]){
+	double r,a,p;
+	a=(7.5*7.5)*(22.0/7);
+	p=(2*7.5)*(22.0/7);
+	System.out.println("Area= "+a);
+	System.out.println("Perimeter= "+p);
+	}
+}
+
+
+
+
+import java.util.Scanner;
+import java.io.*;
+class Dec_bin_19{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		int a;
+		System.out.println("Enter a decimal number");
+		a=sc.nextInt();
+		int r;
+		String bin="";
+		while(a>0)
+		{
+			r=a%2;
+			bin=bin+r;
+			a=a/2;
+	}
+	System.out.print(bin);
+}
+}
+
+
+
+
+
+import java.util.Scanner;
+import java.io.*;
+class Dec_hex_20{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		int a;
+		System.out.println("Enter a decimal number");
+		a=sc.nextInt();
+		int r;
+		String bin="";
+		while(a>0)
+		{
+			r=a%16;
+			bin=bin+r;
+			a=a/16;
+	}
+	System.out.print(bin);
+	
+}
+}
+
+
+
+import java.util.Scanner;
+import java.io.*;
+class Dec_oct_21{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		int a;
+		System.out.println("Enter a decimal number");
+		a=sc.nextInt();
+		int r;
+		String bin="";
+		while(a>0)
+		{
+			r=a%8;
+			bin=bin+r;
+			a=a/8;
+	}
+	System.out.print(bin);
+	}
+}
+
+
+
+
+
+
+class Divide_3{
+	public static void main(String args[]){
+		int a=50,b=3,c;
+		c=a/b;
+	System.out.println("The result is = "+c);
+	}
+}	
+
+
+
+class Expression_9{
+	public static void main(String args[]){
+		double num;
+		num=((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5));
+		System.out.println("Answer = "+num);
+	}
+}
+		
+
+
+
+
+
+class Expression_10{
+	public static void main(String args[]){
+		double num;
+		num= 4.0 *(1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11));
+
+		System.out.println("Answer = "+num);
+	}
+}
+
+
+
+
+class Face_16{
+	public static void main(String args[]){
+		System.out.println("  \"\"\"\"  ");
+		System.out.println(" +     +");
+		System.out.println("[| o o |]");
+		System.out.println(" |  ^  |");
+		System.out.println(" | '.' |");
+		System.out.println(" +-----+");
+	}
+}
+
+
+
+
+
+
+class Flag_14{
+	public static void main(String args[]){
+		System.out.println("* * * * * *===================================");
+		System.out.println(" * * * * * ===================================");
+		System.out.println("* * * * * *===================================");
+		System.out.println(" * * * * * ===================================");
+		System.out.println("* * * * * *===================================");
+		System.out.println(" * * * * * ===================================");
+		System.out.println("* * * * * *===================================");
+		System.out.println(" * * * * * ===================================");
+		System.out.println("* * * * * *===================================");
+		System.out.println("==============================================");
+		System.out.println("==============================================");
+		System.out.println("==============================================");
+		System.out.println("==============================================");
+		System.out.println("==============================================");
+	}
+}
+
+
+
+
+
+
+class Hello_1{
+	public static void main(String args[]){
+		System.out.println("Hello");
+		System.out.println("Prajwal Tarar");
+		}
+	}	
+
+
+
+
+
+import java.util.Scanner;
+class Mul_table_7{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		int num;
+		System.out.println("Enter a number to print its table");
+		num = sc.nextInt();
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(num+"X"+i+"="+i*num);
+		}
+	}
+}
+
+
+
+
+
+
+
+import java.util.Scanner;
+import java.io.*;
+class Oct_dec_25{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Octal number");
+		String OctalString =sc.nextLine();
+		System.out.println("Decimal of Octal is = "+Integer.parseInt(OctalString,8));
+	}
+}
+
+
+
+
+
+class Pattern_8{
+	public static void main(String args[]){
+		System.out.println("   J   A   V     V   A");
+		System.out.println("   J  A A   V   V   A A");
+		System.out.println("J  J AAAAA   V V   AAAAA ");
+		System.out.println(" J J A    A   V   A     A ");
+	}
+}
+
+
+
+
+
+
+
+import java.util.Scanner;
+class Product_5{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		int num1,num2,x;
+		System.out.println("Enter the fist number");
+		num1=sc.nextInt();
+		System.out.println("Enter the second number");
+		num2=sc.nextInt();
+		x=num1*num2;
+		System.out.println("The product of two number is= "+x);
+	}
+}
+
+
+
+
+class Rectangle_13{
+	public static void main(String args[]){
+		float a,p;
+		float w=5.6f;
+		float l=8.5f;
+		a= (l * w);
+		p=(2 * (l +w)) ;
+		System.out.println("Area= "+a);
+		System.out.println("Perimeter= "+p);
+	}
+}
+
+
+
+
+class Result_4{
+	public static void main(String args[]){
+		int a,b,c,d;
+		a=-5 + 8 * 6;
+		b=(55+9) % 9;
+		c=20 + -3*5 / 8;
+		d=5 + 15 / 3 * 2 - 8 % 3;
+	System.out.println("a= "+a);
+	System.out.println("b= "+b);
+	System.out.println("c= "+c);
+	System.out.println("d= "+d);
+	}
+}
+		
+
+
+
+class Sum_2{
+	public static void main(String args[]){
+		int a=75;
+		int b=65;
+		int c=a+b;
+		System.out.println("The sum of number is = "+c);
+	}
+}
+
+
+
+
+
+
+
+import java.util.Scanner;
+class Swap_15{
+	public static void main(String args[]){
+		int a,b;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter first number");
+		a=sc.nextInt();
+		System.out.println("Enter second number");
+		b=sc.nextInt();
+		a=a+b;
+		b=a-b;
+		a=a-b;
+		System.out.println("a= "+a+"\t"+"b= "+b);
+	}
+}	
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
