@@ -1,0 +1,189 @@
+class Assig_1{
+	public static void main(String args[]){
+		int a= 10;
+		int b=025;
+		int c=0xCDAC;
+		System.out.println(a+" "+b+" "+c);
+		float d= 10;
+		float e= 025;
+		float f= 0XCDAC;
+		System.out.println(d+" "+e+" "+f);
+		char g= 65;
+		char h='\u0097';
+		char i=0xA;
+		System.out.println(g+" "+h+" "+" "+i);
+}
+}
+
+==============================================================
+
+class Assig_2{
+	public static void main(String args[]){
+	char a=35;
+	char b=50;
+	char c=93;
+	char d=105;
+	char e=124;
+	char f=48;
+	char g=154;
+System.out.println(a+" "+b+" "+c+" "+d+" "+e+" "+f+" "+g);	
+	}
+}
+
+================================================================
+
+class Assig_3{
+	static int a=50;
+	public static void main(String args[]){
+		
+		int x=45;
+		Solve S1=new Solve();
+		System.out.println(Solve.cal());
+		System.out.println(a);
+		System.out.println(Solve.a);
+		System.out.println(S1.cal1());
+		
+
+	}
+}
+class Solve{
+	static int a=10;
+	static int b=20;
+	
+	static int cal(){
+		return a+b;
+	}
+	int cal1(){
+		return a*b;
+	}
+}
+		
+
+
+================================================================
+
+
+class Assig_4{
+	static byte a;static short b;static int c;static long d;
+	static float e;static double f;
+	static char g;static boolean h;
+	public static void main(String args[]){
+		System.out.println(a+" "+b+" "+c+" "+d+" "+e+" "+f+" "+g+" "+h);
+	}
+}
+	
+	
+
+================================================================
+
+class Assig_5{
+	public static void main(String args[]){
+		for(int i=1;i<=30;i++){
+			for(int j=1;j<=10;j++ )
+			System.out.println(j+" X "+i+" = "+j*i);
+		System.out.println("===================");
+		
+		}
+	}
+}
+
+
+================================================================
+
+
+class Assig_5_2{
+	
+	public static void main(String args[]){
+		int j=1;
+		for(int i=1;i<=10;i++){
+			System.out.println(j+" X "+i+" = "+j*i);
+			
+			if(i==10){
+				j++;
+				System.out.println("==============");
+				if(j==31){
+					break;
+				}
+				i=0;
+			}
+			
+		}
+		
+	}
+}
+
+
+=============================================================================
+
+class Assig_6{
+	public static void main(String args[]){
+		int i=1,j=1;
+		while (i<=10){
+			System.out.println(j+" X "+i+" = "+j*i);
+			if(i==10){
+				j++;
+				System.out.println("==============");
+				if(j==31){
+					break;
+				}
+				i=0;
+			}
+			i++;
+		}
+	}
+}
+
+============================================================================
+
+
+class Assig_7{
+	public static void main(String args[]){
+		for(int i=1;i<=5;i++){
+			for(int j=1;j<=i;j++){
+				System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+
+=============================================================================
+
+
+class Assig_8{
+	public static void main(String args[]){
+		for(int i=1;i<=5;i++){
+			for(int j=5-1;j>=i;j--){
+				System.out.print(" ");
+			}
+			for(int k=1;k<=i;k++)
+				System.out.print("* ");
+			System.out.println();
+		}
+	}
+}
+
+
+=============================================================================
+
+class Assig_9{
+	public static void main(String args[]){
+		for (int i=1;i<=5;i++){
+			for (int j=1;j<=5;j++){
+				if(j==i || j==5-i+1)
+					System.out.print("* ");
+				else
+					System.out.print("  ");
+			}
+				System.out.println();
+			
+		}
+	}
+}
+				
+				
+
+==============================================================================
+
+
+

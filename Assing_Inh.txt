@@ -1,0 +1,124 @@
+class Animal{
+	void eat(){
+		System.out.println("Animal class eat");
+	}
+	void sleep(){
+		System.out.println("Animal class sleep");
+	}
+}
+class Bird extends Animal{
+	void eat(){
+		System.out.println("Bird class eat");
+	}
+	
+	
+	void sleep(){
+		System.out.println("Bird class sleep");
+	}
+	void fly(){
+		System.out.println("Bird fly");
+	}
+}
+class Inhe_1{
+	public static void main(String args[]){
+		Animal A=new Animal();
+		
+		//A.eat();
+		//A.sleep();
+		
+		Bird B=new Bird();
+		
+		B.eat();
+		B.sleep();
+		B.fly();
+	}
+}
+
+=====================================================================================================
+
+package PackP;
+public class Person{
+	public String name;
+	public Person(){
+		
+	}
+	public Person(String name){
+		this.name=name;
+	}
+	
+	public void disp(){
+		System.out.println("Name is = "+name);
+	}
+}
+
+package PackE;
+import PackP.Person;
+
+public class Employee extends Person {
+	public double salary;
+	public int year;
+	
+	public Employee(String name,double salary,int year){
+		super(name);
+		//this();
+		this.salary=salary;
+		this.year=year;
+	}
+	public void disp(){
+		System.out.println("Name= "+name+" Salary= "+salary+"Year= "+year);
+	}
+}
+import PackP.Person;
+
+import PackE.Employee;
+public class Inhe_2{
+	public static void main(String args[]){
+		System.out.println("INFO. OF EMP");
+		//Person P = new Person("Prajwal");
+		Employee E=new Employee("Prajwal",1000.0,2021);
+		E.disp();
+		//P.per_disp();
+		//Person P=new Employee(1000.0,2021);
+		
+		//P.name="ZZZ";
+		//P.per_disp();
+	}
+}
+		
+======================================================================================================
+
+
+	import java.util.Scanner;
+class Person{
+	String name;
+	int age;
+	String gender;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter name ,age ,gender");
+	name =sc.nextLine();
+	age=sc.nextInt();
+	sc.next();
+	gender=sc.next();
+	
+}
+class Student extends Person{
+	int id;
+	int cgpa;
+	System.out.println("Enter ID and CGPA");
+	id=sc.nextInt();
+	cgpa=sc.nextInt();
+	void disp(){
+		System.out.println("Nane= "+name+"Age= "+age+"Gender= "+gender+"Id= "+id+"CGPA= "+cgpa);
+	}
+}
+class Inhe_3{
+	public static void main(String args[]){
+		Student S= new Student();
+		S.disp();
+	}
+}
+	
+
+
+======================================================================================================
+

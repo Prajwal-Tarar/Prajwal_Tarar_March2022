@@ -1,0 +1,86 @@
+import java.util.Scanner;
+class Excep_A1{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter number");
+		try{
+		String str=sc.next();
+		int x=Integer.parseInt(str);
+		int y=x*x;
+		System.out.println("squre is = "+y);
+		}
+		catch(Exception e){
+			System.out.println("Invalid INPUT");
+		}
+	}
+}
+
+==========================================================================
+
+import java.util.Scanner;
+class Excep_A2{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		try{
+		System.out.println("Enter number of element in array");
+		int x=sc.nextInt();
+		int arr[]=new int[x];
+		System.out.println("Enter the element in array");
+		for(int i=0;i<arr.length;i++){
+			arr[i]=sc.nextInt();
+		}
+		System.out.println("Enter the index number you want element in array");
+		int z=sc.nextInt();
+		System.out.println(arr[z]);
+		}
+		catch(Exception e){
+			System.out.println("Invalid INPUT");
+	}
+	}
+}
+		
+		
+===========================================================================
+
+class Excep_A3{
+	public static void main(String args[]){
+		try{
+		int a[]=new int[args.length];
+		int x=0;
+		for(int i=0;i<args.length;i++){
+			a[i]=Integer.parseInt(args[i]);
+			x=x+a[i];
+		}
+		System.out.println("Total is= "+x);
+		System.out.println("Average is= "+x/args.length);
+		}
+		catch(ArithmeticException e){
+			System.out.println("You can not devide by 0");
+		}
+	catch(Exception e){
+		System.out.println("Invalid Input");
+	}
+	}
+}
+		
+=========================================================================
+class Excep_A4{
+	public static void main(String args[]){
+		System.out.println("Enter name & age");
+		int x=Integer.parseInt(args[1]);
+		try{
+		if(x>=18 && x<=60){
+			System.out.println("Your age is= "+x);
+		}else{
+			//int c=10/0;
+			throw new ArithmeticException();
+		}
+		}
+		catch(ArithmeticException e){
+			System.out.println("Passing Input is not proper");
+		}
+		
+	}
+} 
+==========================================================================
+
